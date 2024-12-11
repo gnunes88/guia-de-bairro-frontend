@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -10,8 +11,13 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Heart className="w-6 h-6 text-[#EB194B]" />
-            <span className="text-[#EB194B] font-bold text-xl">Lopes</span>
+            <Image
+              src="https://www.lopes.com.br/assets/svgs/default_logo.svg"
+              alt="Lopes"
+              width={150}
+              height={48}
+              priority
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
@@ -37,7 +43,7 @@ export function Navbar() {
 
           <div className="flex items-center space-x-4">
             <div className="relative">
-              <Heart className="w-6 h-6 text-[#EB194B]" />
+              <Heart className="w-6 h-6 text-[#EB194B] stroke-[#EB194B] fill-none" />
               <span className="absolute -top-2 -right-2 bg-[#EB194B] text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                 0
               </span>

@@ -7,19 +7,14 @@ export function Navigation() {
     { id: 'sobre', label: 'Sobre o bairro', bold: true },
     { id: 'historia', label: 'História' },
     { id: 'lazer', label: 'Lazer' },
-    { id: 'imoveis', label: 'Imóveis prontos' },
     { id: 'gastronomia', label: 'Gastronomia' },
-    { id: 'avaliacoes', label: 'Avaliações' },
     { id: 'acessibilidade', label: 'Acessibilidade' },
-    { id: 'lancamentos', label: 'Lançamentos' },
     { id: 'seguranca', label: 'Segurança' },
-    { id: 'condominios', label: 'Condomínios' },
-    { id: 'compare', label: 'Compare' },
     { id: 'infraestrutura', label: 'Infraestrutura' },
   ];
 
   return (
-    <nav className="sticky top-0 bg-white shadow-md z-50">
+    <nav className="sticky top-0 bg-[#F1F1F1] shadow-md z-50">
       <div className="container mx-auto px-4 py-4 overflow-x-auto">
         <div className="flex gap-6 whitespace-nowrap">
           {links.map((link) => (
@@ -30,7 +25,7 @@ export function Navigation() {
               smooth={true}
               offset={-100}
               duration={500}
-              className={`cursor-pointer hover:text-primary transition-colors ${
+              className={`cursor-pointer hover:text-[#EB194B] transition-colors ${
                 link.bold ? 'font-bold underline' : ''
               }`}
             >

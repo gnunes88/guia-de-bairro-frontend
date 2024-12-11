@@ -7,7 +7,7 @@ export function Header() {
   return (
     <div className="relative h-[80vh] w-full">
       <Image
-        src="https://images.unsplash.com/photo-1590090208734-2c532aa66d7c"
+        src="https://ynkkkxhqzvqzzvikxteu.supabase.co/storage/v1/object/public/neighborhood_guide/imagem-bairro-padrao.jpg?t=2024-12-09T19%3A40%3A13.792Z"
         alt="Moema neighborhood"
         fill
         className="object-cover"
@@ -18,7 +18,7 @@ export function Header() {
         <h1 className="text-6xl font-bold mb-8 text-center">Moema</h1>
         <Button
           size="lg"
-          className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
+          className="bg-[#EB194B] hover:bg-[#EB194B]/90 text-white px-8 py-6 text-lg"
         >
           Ver imóveis
         </Button>

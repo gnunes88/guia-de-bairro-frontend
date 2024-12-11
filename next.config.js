@@ -4,7 +4,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
+  images: { 
+    unoptimized: true,
+    domains: [
+      'images.unsplash.com',
+      'www.lopes.com.br',
+      'ynkkkxhqzvqzzvikxteu.supabase.co'
+    ]
+  },
 };
 
 module.exports = nextConfig;
